@@ -40,7 +40,7 @@
     <p>{{ viewing_user.profile|markdown }}</p>
 
     {% if viewing_user.timezone %}
-        <p>Timezone: {{ viewing_user.timezone }}</p>
+        <p>Timezone: {{ viewing_user.timezone.name }}</p>
     {% endif %}
 
     {% if message_form and not viewing_yourself %}
