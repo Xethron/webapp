@@ -61,6 +61,9 @@ class ProfileForm extends AbstractType
             ->add('email', 'email', [
                 'constraints' => [new Email()],
             ])
+            ->add('timezone', 'timezone', [
+                'required' => false,
+            ])
             ->add('isMentor', 'checkbox', [
                 'required' => false,
             ])

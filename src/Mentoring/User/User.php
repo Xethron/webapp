@@ -15,6 +15,7 @@ class User
     protected $githubUid = null;
     protected $isMentor = false;
     protected $isMentee = false;
+    protected $timezone = null;
     protected $profile = '';
     protected $mentorTags = [];
     protected $apprenticeTags = [];
@@ -164,5 +165,15 @@ class User
     public function hasSendNotifications()
     {
         return $this->sendNotifications;
+    }
+
+    public function getTimezone()
+    {
+        return $this->timezone;
+    }
+
+    public function setTimezone($timezone)
+    {
+        $this->timezone = $timezone;
     }
 }
